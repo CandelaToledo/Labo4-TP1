@@ -1,0 +1,51 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(43, 40, 40, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.modal-content {
+  background-color: rgba(8, 7, 7, 0.945);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 28rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #e0e3eb;
+  transition: color 0.2s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 70%;
+}
+
+.close-button:hover {
+  color: #202020;
+  background-color: rgb(184, 219, 219);
+}
+
+.song-details p {
+  margin-bottom: 0.5rem;
+}
+
+.video-frame {
+  width: 100%;
+  height: 16rem;
+  margin-bottom: 1rem;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,62 @@
+/* Lista de canciones */
+ul {
+  list-style: none;
+  padding: 0px;
+}
+div .listado{
+  border: 1.5px solid rgba(0, 0, 0, 0.596);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+li {
+  background-color: #764c8970;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 230px;
+}
+
+li p {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+button {
+  height: 40px;
+  background-color: #267539;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+div button{
+  font-size: 13px;
+}
+button:hover {
+  background-color: #000000;
+}
+
+button + button {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+button + button:hover {
+  background-color: #c82333;
+}
+
+h2{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+

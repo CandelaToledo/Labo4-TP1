@@ -1,0 +1,116 @@
+/* Estilos generales para el layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #E8D7F1;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Lato';
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff79;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 10px auto;
+  
+  
+}
+
+button:hover {
+  background-color: #d41d10;
+}
+div .contenedor button.borrar{
+ padding: 10px;
+ font-size: 15px;
+ 
+}
+.filtro{
+  padding: 5px;
+  height: 40px;
+  border: none;
+  margin-bottom: 20px;
+  margin: 30px;
+  
+}
+.filtro input{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.192);
+  font-family: 'Lato';
+  text-align: center;
+  border: none;
+  width: 300px;
+  transition: 1.5s;
+}
+.filtro input:hover{
+  background-color: rgba(128, 128, 128, 0.226);
+  transition: 0.3s;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.columna-derecha {
+  max-width: 300px;
+}
+/* Modo claro por defecto */
+body.light-mode {
+  background-color: #D8F3DC;
+  color: #333;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #0b4236;
+  color: #f4f4f4;
+}
+
+/* Botón de modo */
+.modo-toggle {
+  display: block;
+  
+  padding: 8px 10px;
+  margin: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+}
+
+body.light-mode .modo-toggle {
+  background-color: #ddd;
+  color: #000;
+}
+
+
