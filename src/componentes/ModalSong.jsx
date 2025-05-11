@@ -21,10 +21,8 @@ const SongModal = ({ isOpen, onClose, song, onPlay}) => {
         <button onClick={onClose} className="close-button">
           <X />
         </button>
-        <h2 className="text-2xl font-bold mb-4">Detalles de la canción</h2>
         <div className="song-details">
           <p><strong>Título:</strong> {song?.title}</p>
-          <p><strong>Artista:</strong> {song?.artist}</p>
           
         </div>
 

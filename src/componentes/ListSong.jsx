@@ -11,7 +11,7 @@ const ListSong = ({songs, onSongClick, onPlay}) => {
                 <ul>
                 {songs.map((song) => (
                 <li key={song.id} >
-                    <p><strong>{song.title}</strong> - {song.artist} </p>
+                    <p><strong>{song.title}</strong> </p>
                     <p><strong> Reproducciones:</strong> {song.plays}</p>
                     <button onClick={() => onSongClick(song)} onPlay={song}>Escuchar</button>
                 </li>

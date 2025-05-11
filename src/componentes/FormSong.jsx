@@ -2,14 +2,14 @@ import React, {useState}from "react";
 import './form.css';
 const FormSong = ({AddSong, songs}) => {
     const [title, setTitle] = useState("");
-    const [artist, setArtist] = useState("");
+
     const [youtubeUrl, setYoutubeUrl] = useState("");
     const [error, setError] = useState("");
 
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      if (!title || !artist || !youtubeUrl) {
+      if (!title || !youtubeUrl) {
         setError("Todos los campos son obligatorios");
         return;
         }
@@ -33,14 +33,13 @@ const FormSong = ({AddSong, songs}) => {
           const newSong = {
             id: Date.now(),
             title,
-            artist,
             youtubeUrl,
             plays: 0, // Contador de reproducciones
           };
       
           AddSong(newSong);
           setTitle("");
-          setArtist("");
+          //setArtist("");
           setYoutubeUrl("");
           setError("");
     }
@@ -62,15 +61,7 @@ return (
         />
       </div>
 
-      <div>
-        <label>Artista:</label>
-        <input
-          type="text"
-          value={artist}
-          onChange={(e) => setArtist(e.target.value)}
-          className="input-field"
-        />
-      </div>
+    
 
       <div>
         <label>URL de YouTube:</label>

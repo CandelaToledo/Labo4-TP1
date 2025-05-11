@@ -94,7 +94,7 @@ const sortedSongs = sortByPlays
         <div className="filtro">
           <input
         type="text"
-        placeholder="Buscar por título o artista"
+        placeholder="Buscar canción"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         />
